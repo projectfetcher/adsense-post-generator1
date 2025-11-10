@@ -1,0 +1,121 @@
+Starting AI post generation...
+AI Blog Generator Started – Flan-T5-Large + MiniLM (CPU)
+Site Description (hardcoded): Mauritius.mimusjobs.com is a premier job portal dedicated to connecting talent with opportunities across Mauritius's thriving economy. From IT roles in Ebene Cybercity to luxury hospitality positions in Grand Baie, the platform features thousands of verified listings in tourism, finance, tech, healthcare, and more. Job seekers can upload resumes, build ATS-friendly profiles, and receive tailored job alerts, while employers benefit from advanced recruitment tools and company branding. With a mobile-optimized interface, multilingual support (English, French, Kreol), and AI-powered matching, it empowers locals and expatriates alike to advance their careers in one of the Indian Ocean’s most dynamic job markets.
+Loading google/flan-t5-large ...
+Flan-T5-Large loaded on CPU
+Loading all-MiniLM-L6-v2 for title uniqueness...
+SentenceTransformer loaded
+Generating 15 unique blog titles for: Mauritius.mimusjobs.com is a premier job portal dedicated to connecting talent with opportunities across Mauritius's thriving economy. From IT roles in Ebene Cybercity to luxury hospitality positions in Grand Baie, the platform features thousands of verified listings in tourism, finance, tech, healthcare, and more. Job seekers can upload resumes, build ATS-friendly profiles, and receive tailored job alerts, while employers benefit from advanced recruitment tools and company branding. With a mobile-optimized interface, multilingual support (English, French, Kreol), and AI-powered matching, it empowers locals and expatriates alike to advance their careers in one of the Indian Ocean’s most dynamic job markets.
+Raw title output:
+Mauritius.mimusjobs.com - How to find and apply to jobs
+Final 15 Unique Titles:
+- mimusjobs.com - How to find and apply to jobs
+- Mauritius.mimusjobs.com - How to find and apply to jobs
+- How to find a career in Mauritius
+- How to find a career in Dubai: A complete guide.
+- The first ever job in Dubai.
+- "The first job in a country like Mauritius.."
+- Job listings for the fastest growing market: Mauritius.
+- What is the first job in a country like Mauritius?
+- The job market in Mauritius: What will you gain?
+- Find and save a job in Mauritius
+- "The first ever job in Dubai, now in Mauritius."
+- "Assess and analyze job opportunities in Mauritius".
+- Mauritius.mimusjobs.com: The first job in a country like Hawaii.."
+- Find and save a job in Guadeloupe.
+- An interview with Mauritius.mimusjobs.com founder: "The first ever job in Dubai, now in Mauritius."
+Starting article generation loop...
+Generating article: mimusjobs.com - How to find and apply to jobs
+Generated: mimusjobs.com - How to find and apply to jobs (288 words)
+Generating article: Mauritius.mimusjobs.com - How to find and apply to jobs
+Generated: Mauritius.mimusjobs.com - How to find and apply to jobs (228 words)
+Generating article: How to find a career in Mauritius
+Generated: How to find a career in Mauritius (224 words)
+Generating article: How to find a career in Dubai: A complete guide.
+Generated: How to find a career in Dubai: A complete guide. (315 words)
+Generating article: The first ever job in Dubai.
+Generated: The first ever job in Dubai. (261 words)
+Generating article: "The first job in a country like Mauritius.."
+Generated: "The first job in a country like Mauritius.." (264 words)
+Generating article: Job listings for the fastest growing market: Mauritius.
+Generated: Job listings for the fastest growing market: Mauritius. (202 words)
+Generating article: What is the first job in a country like Mauritius?
+Generated: What is the first job in a country like Mauritius? (244 words)
+Generating article: The job market in Mauritius: What will you gain?
+Generated: The job market in Mauritius: What will you gain? (182 words)
+Generating article: Find and save a job in Mauritius
+Generated: Find and save a job in Mauritius (318 words)
+Generating article: "The first ever job in Dubai, now in Mauritius."
+Generated: "The first ever job in Dubai, now in Mauritius." (433 words)
+Generating article: "Assess and analyze job opportunities in Mauritius".
+Generated: "Assess and analyze job opportunities in Mauritius". (317 words)
+Generating article: Mauritius.mimusjobs.com: The first job in a country like Hawaii.."
+Generated: Mauritius.mimusjobs.com: The first job in a country like Hawaii.." (213 words)
+Generating article: Find and save a job in Guadeloupe.
+Generated: Find and save a job in Guadeloupe. (237 words)
+Generating article: An interview with Mauritius.mimusjobs.com founder: "The first ever job in Dubai, now in Mauritius."
+Generated: An interview with Mauritius.mimusjobs.com founder: "The first ever job in Dubai, now in Mauritius." (206 words)
+articles.json saved with 15 articles
+progress.json set to 100%
+All articles generated successfully!
+AI Blog Generator Started – Flan-T5-Large + MiniLM (CPU)
+Site Description (hardcoded): Mauritius.mimusjobs.com is a premier job portal dedicated to connecting talent with opportunities across Mauritius's thriving economy. From IT roles in Ebene Cybercity to luxury hospitality positions in Grand Baie, the platform features thousands of verified listings in tourism, finance, tech, healthcare, and more. Job seekers can upload resumes, build ATS-friendly profiles, and receive tailored job alerts, while employers benefit from advanced recruitment tools and company branding. With a mobile-optimized interface, multilingual support (English, French, Kreol), and AI-powered matching, it empowers locals and expatriates alike to advance their careers in one of the Indian Ocean’s most dynamic job markets.
+Loading google/flan-t5-large ...
+Flan-T5-Large loaded on CPU
+Loading all-MiniLM-L6-v2 for title uniqueness...
+SentenceTransformer loaded
+Generating 15 unique blog titles for: Mauritius.mimusjobs.com is a premier job portal dedicated to connecting talent with opportunities across Mauritius's thriving economy. From IT roles in Ebene Cybercity to luxury hospitality positions in Grand Baie, the platform features thousands of verified listings in tourism, finance, tech, healthcare, and more. Job seekers can upload resumes, build ATS-friendly profiles, and receive tailored job alerts, while employers benefit from advanced recruitment tools and company branding. With a mobile-optimized interface, multilingual support (English, French, Kreol), and AI-powered matching, it empowers locals and expatriates alike to advance their careers in one of the Indian Ocean’s most dynamic job markets.
+Raw title output:
+Mauritius.mimusjobs.com - How to find and apply to jobs
+Final 15 Unique Titles:
+- mimusjobs.com - How to find and apply to jobs
+- Mauritius.mimusjobs.com - How to find and apply to jobs
+- How to find a career in Mauritius
+- How to find a career in Dubai: A complete guide.
+- The first ever job in Dubai.
+- "The first job in a country like Mauritius.."
+- Job listings for the fastest growing market: Mauritius.
+- What is the first job in a country like Mauritius?
+- The job market in Mauritius: What will you gain?
+- Find and save a job in Mauritius
+- "The first ever job in Dubai, now in Mauritius."
+- "Assess and analyze job opportunities in Mauritius".
+- Mauritius.mimusjobs.com: The first job in a country like Hawaii.."
+- Find and save a job in Guadeloupe.
+- An interview with Mauritius.mimusjobs.com founder: "The first ever job in Dubai, now in Mauritius."
+Starting article generation loop...
+Generating article: mimusjobs.com - How to find and apply to jobs
+Generated: mimusjobs.com - How to find and apply to jobs (288 words)
+Generating article: Mauritius.mimusjobs.com - How to find and apply to jobs
+Generated: Mauritius.mimusjobs.com - How to find and apply to jobs (228 words)
+Generating article: How to find a career in Mauritius
+Generated: How to find a career in Mauritius (224 words)
+Generating article: How to find a career in Dubai: A complete guide.
+Generated: How to find a career in Dubai: A complete guide. (315 words)
+Generating article: The first ever job in Dubai.
+Generated: The first ever job in Dubai. (261 words)
+Generating article: "The first job in a country like Mauritius.."
+Generated: "The first job in a country like Mauritius.." (264 words)
+Generating article: Job listings for the fastest growing market: Mauritius.
+Generated: Job listings for the fastest growing market: Mauritius. (202 words)
+Generating article: What is the first job in a country like Mauritius?
+Generated: What is the first job in a country like Mauritius? (244 words)
+Generating article: The job market in Mauritius: What will you gain?
+Generated: The job market in Mauritius: What will you gain? (182 words)
+Generating article: Find and save a job in Mauritius
+Generated: Find and save a job in Mauritius (318 words)
+Generating article: "The first ever job in Dubai, now in Mauritius."
+Generated: "The first ever job in Dubai, now in Mauritius." (433 words)
+Generating article: "Assess and analyze job opportunities in Mauritius".
+Generated: "Assess and analyze job opportunities in Mauritius". (317 words)
+Generating article: Mauritius.mimusjobs.com: The first job in a country like Hawaii.."
+Generated: Mauritius.mimusjobs.com: The first job in a country like Hawaii.." (213 words)
+Generating article: Find and save a job in Guadeloupe.
+Generated: Find and save a job in Guadeloupe. (237 words)
+Generating article: An interview with Mauritius.mimusjobs.com founder: "The first ever job in Dubai, now in Mauritius."
+Generated: An interview with Mauritius.mimusjobs.com founder: "The first ever job in Dubai, now in Mauritius." (206 words)
+articles.json saved with 15 articles
+progress.json set to 100%
+All articles generated successfully!
+SUCCESS
+Generation complete.
