@@ -1,0 +1,46 @@
+name: Generate AI Posts
+
+# Run manually from the Actions tab (no inputs needed)
+on:
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential
+
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run AI post generator
+        env:
+          # Hard-coded – no user input required
+          SITE_DESC: "Mauritius.mimusjobs.com: Your gateway to top jobs in Mauritius. Explore vacancies in tourism, finance, IT, and more from leading employers. Post resumes, apply easily, and advance your career on the island."
+        run: |
+          echo "Starting AI post generation..." > logs.txt
+          python generate_articles.py | tee -a logs.txt
+          echo "Generation complete." >> logs.txt
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add progress.json articles.json logs.txt || true
+          git commit -m "AI posts generated" || echo "No changes to commit"
+          git push
