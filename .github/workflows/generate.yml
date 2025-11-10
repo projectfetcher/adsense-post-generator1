@@ -1,16 +1,26 @@
 name: Generate AI Posts
 
-# Run manually from the Actions tab (no inputs needed)
 on:
   workflow_dispatch:
+    inputs:
+      site_description:
+        description: 'Site description'
+        required: true
+      topics:
+        description: 'Topics (optional)'
+        required: false
+      rewrite_count:
+        description: 'Number of existing posts to rewrite'
+        required: true
+      generate_count:
+        description: 'Number of new posts to generate'
+        required: true
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -18,29 +28,26 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential
+      - name: Install deps
+        run: pip install torch transformers sentence-transformers
 
-      - name: Install Python packages
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Run AI post generator
+      - name: Run Generator
         env:
-          # Hard-coded – no user input required
-          SITE_DESC: "Mauritius.mimusjobs.com: Your gateway to top jobs in Mauritius. Explore vacancies in tourism, finance, IT, and more from leading employers. Post resumes, apply easily, and advance your career on the island."
+          SITE_DESC: ${{ inputs.site_description }}
+          TOPICS: ${{ inputs.topics }}
+          REWRITE_COUNT: ${{ inputs.rewrite_count }}
+          GENERATE_COUNT: ${{ inputs.generate_count }}
         run: |
-          echo "Starting AI post generation..." > logs.txt
-          python generate_posts.py | tee -a logs.txt
-          echo "Generation complete." >> logs.txt
+          cat > generate_articles.py << 'EOF'
+          ${{ secrets.PYTHON_SCRIPT }}
+          EOF
+          python generate_articles.py
 
-      - name: Commit generated files
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add progress.json articles.json logs.txt || true
-          git commit -m "AI posts generated" || echo "No changes to commit"
-          git push
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: posts
+          path: |
+            articles.json
+            progress.json
+            logs.txt
